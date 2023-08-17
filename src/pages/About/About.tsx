@@ -3,9 +3,20 @@ import Header from "../../components/Header/Header";
 import styles from "./About.module.scss";
 
 const About: React.FC = () => {
+    const links = [
+        {
+            link: "/products",
+            linkLabel: "View Products"
+        },
+        {
+            link: "/home",
+            linkLabel: "Home"
+        }
+    ];
+    
     return (
         <IonPage>
-            <Header title="About Me" link="/products" linkLabel="View Products"/>
+            <Header title="About Me" links={links}/>
             <IonContent>
                 <div className={styles.aboutContainer}>
                     <h1>The Focal Point</h1>

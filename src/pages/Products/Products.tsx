@@ -5,10 +5,22 @@ import Card from "../../components/Card/Card";
 import styles from "./Products.module.scss"
 
 const Products: React.FC = () => {
+    const links = [
+        {
+            link: "/about",
+            linkLabel: "About Me"
+        },
+        {
+            link: "/home",
+            linkLabel: "Home"
+        }
+    ];
+
     const productItems = testData;
+
     return (
         <IonPage>
-            <Header title="Products" link="/about" linkLabel="About Me"/>
+            <Header title="Products" links={links}/>
             <IonContent>
                 <IonList className={styles.list}>
                     {productItems.map((product)=>
