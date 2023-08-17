@@ -1,18 +1,10 @@
-import { IonHeader, IonPage, IonTitle, IonToolbar,IonList, IonItem, IonLabel } from "@ionic/react"
+import { IonPage } from "@ionic/react";
+import Header from "../../components/Header/Header";
 
 const About: React.FC = () => {
     return (
         <IonPage>
-            <IonHeader>
-                <IonToolbar>
-                    <IonTitle>About Me</IonTitle>
-                </IonToolbar>
-                <IonList>
-                    <IonItem routerLink='/products'>
-                        <IonLabel>View Products</IonLabel>
-                    </IonItem>
-                </IonList>
-            </IonHeader>
+            <Header title="About Me" link="/products" linkLabel="View Products"/>
         </IonPage>
     )
 }
