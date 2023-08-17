@@ -1,4 +1,4 @@
-import { IonHeader, IonPage, IonTitle, IonToolbar } from "@ionic/react"
+import { IonHeader, IonPage, IonTitle, IonToolbar,IonList, IonItem, IonLabel } from "@ionic/react"
 
 const About: React.FC = () => {
     return (
@@ -7,6 +7,11 @@ const About: React.FC = () => {
                 <IonToolbar>
                     <IonTitle>About Me</IonTitle>
                 </IonToolbar>
+                <IonList>
+                    <IonItem routerLink='/products'>
+                        <IonLabel>View Products</IonLabel>
+                    </IonItem>
+                </IonList>
             </IonHeader>
         </IonPage>
     )

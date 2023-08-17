@@ -40,7 +40,7 @@ const App: React.FC = () => (
           <About />
         </Route>
         <Route exact path="/products">
-          <About />
+          <Products />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

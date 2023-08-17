@@ -1,12 +1,20 @@
-import './ExploreContainer.css';
+import styles from './ExploreContainer.module.scss';
+import { IonList, IonItem, IonLabel } from '@ionic/react';
 
 interface ContainerProps { }
 
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
-    <div id="container">
-      <strong>Ready to create an app?</strong>
-      <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div className={styles.container}>
+      <strong>Welcome !</strong>
+      <IonList className={styles.list}>
+        <IonItem className={styles.link} routerLink='/about'>
+          <IonLabel>Learn about me</IonLabel>
+        </IonItem>
+        <IonItem className={styles.link}  routerLink='/products'>
+          <IonLabel>View Products</IonLabel>
+        </IonItem>
+      </IonList>
     </div>
   );
 };
