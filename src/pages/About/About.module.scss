@@ -1,0 +1,16 @@
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10%;
+}
+
+.profilePic{
+    width: 30vw;
+    border-radius: 50%;
+}
+.profilePic:hover{
+    transform: scale(1.1);
+}
